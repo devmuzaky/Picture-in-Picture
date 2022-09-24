@@ -15,6 +15,7 @@ body {
     background-color: whitesmoke;
     font-family: "Courgette", cursive;
     user-select: none;
+
 }
 
 .multi-button {
@@ -62,6 +63,7 @@ h1 {
 @media screen and (max-width: 600px) {
     body {
         margin: 10px;
+        min-width:450px ;
     }
 
     h1 {
@@ -73,6 +75,6 @@ h1 {
     }
 
     #button, #button-start {
-        font-size: 1.2rem;
+        /*font-size: 1.2rem;*/
     }
 }
