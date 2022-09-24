@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 
 html {
     box-sizing: border-box;
@@ -6,11 +7,72 @@ html {
 
 body {
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: "Courgette", cursive;
+    user-select: none;
+}
+
+.multi-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 4px 4px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.multi-button button {
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 1rem;
+    border: 0.125rem solid black;
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+    font-family: monospace;
+    text-transform: lowercase;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
+    transition: flex-grow 250ms;
+}
+
+.multi-button button + button {
+    margin-left: calc(0.125rem * -1);
+}
+
+.multi-button button:hover {
+    color: white;
+    outline: none;
+    text-shadow: none;
+    background-color: black;
+}
+
+.multi-button button:active {
+    transform: translateY(0.125rem);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #button, #button-start {
+        font-size: 1.2rem;
+    }
 }

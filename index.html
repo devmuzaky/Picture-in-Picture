@@ -2,17 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Picture in Picture</title>
+    <title>PictureInPictureApp</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=jacinto.design">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 <!--Video-->
+
 <video id="video" controls height="360" width="640" hidden ></video>
-<!--Button-->
-<div class="button-container">
-    <button id="button">START</button>
+<div class="container">
+    <div class="text-container">
+        <h1>How to PiP?</h1>
+        <h2>1. Select the video source to stream</h2>
+        <h2>2. Start Picture in Picture mode</h2>
+        <h2>3. Adjust the height and the width</h2>
+    </div>
+
+    <div class="multi-button">
+        <button id="button">Select the video source</button>
+        <button id="button-start">Start PiP</button>
+    </div>
+
 </div>
+
+<!--Button-->
+
 </body>
 </html>
